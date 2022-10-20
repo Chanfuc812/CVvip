@@ -1,125 +1,259 @@
-<html><head>
-  <title>Chanfuc from UIT</title>
-  <link rel="SHORTCUT ICON" href="images/cormen-tiny.jpg">
-  <script charset="utf-8" src="https://platform.twitter.com/js/button.c6c95b9789db97ea1e9742d215fff751.js"></script></head>
-<body text="#000068" link="#060FDF" vlink="#060FDF" alink="#DC24C5" bgcolor="#FFFFFF">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    body{
+      background: #e6f2ff;
+    }
+  </style>
+</head>
+<body class="w3-content" style="max-width:1200px">
 
-<!-- <TABLE CELLPADDING="10" CELLSPACING="0" WIDTH="475"> -->
-<table cellpadding="10" cellspacing="0">
-  <tbody><tr valign="TOP">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="https://static.vecteezy.com/system/resources/previews/006/718/946/original/cute-pig-eps-logo-simple-design-pink-red-vector.jpg" style="width:50%">
+    <h3 class="w3-wide"><b>MEIDING STORE🐷</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Shirts</a>
+    <a href="#" class="w3-bar-item w3-button">Dresses</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Jeans <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+      <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+      <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+      <a href="#" class="w3-bar-item w3-button">Straight</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Jackets</a>
+    <a href="#" class="w3-bar-item w3-button">Blazers</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
 
-    <td align="LEFT" valign="TOP" width="151">
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
 
-      <img src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.6435-9/193737753_3582409041984566_3021009673068075261_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=xfd2V1ni2EYAX-nHcWx&_nc_ht=scontent.fsgn2-6.fna&oh=00_AT_Ce0EUz67K7E6kQb7BpVqfRqHzvat_jcriZk0Pc8gWkw&oe=63519204"  height="250" width="250"> <p>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-    </p></td>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
 
-    <td align="LEFT" valign="TOP">
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
 
-      <h2>DANG HAI TRANG PHUC
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Jeans</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.6435-9/153969518_3497025403856264_1521366333036860730_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=p8i-zzyugsAAX9O_Xta&_nc_ht=scontent.fsgn2-1.fna&oh=00_AT8pQUs8O7XiUJr4ffO2my1N2FGUChWGC5pSqVHKAYjFYA&oe=6374B3B4" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="w3-hide-small">COLLECTION 2022</h1>
+      <style>
+        .w3-hide-small{
+          color: darkred;
+          font-style: oblique;
+          font-weight: bold;
+        }
+      </style>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOPPING NOW</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans ss2<br><b>$19.11</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://www.w3schools.com/w3images/jeans2.jpg" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$20.02</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://www.w3schools.com/w3images/jeans2.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Mega Ripped Jeans ss2<br><b>$8.12</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://www.w3schools.com/w3images/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.01</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://www.w3schools.com/w3images/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans ss2<br><b>$20.10</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://www.w3schools.com/w3images/jeans4.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$20.21</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://www.w3schools.com/w3images/jeans4.jpg" style="width:100%">
+        <p>Vintage Skinny Jeans ss2<br><b>$08.19</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$12.11</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter your e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">SEND</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>CONTACT</h4>
+        <style>
+          .w3-col s4{
+            font-weight: bold;
+            color:red
+          }
+        </style>
+        <p>Submit your question ❓</p>
+        <form action="onSubmit">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="http://www.facebook.com/meidingcute">About us</a></p>
+        <p><a href="http://www.facebook.com/meidingcute">Support</a></p>
+        <p><a href="https://www.google.com/maps/@10.821194,106.7116703,15z">Find store</a></p>
+        <p><a href="https://shopee.vn/hiimgosu.">Shipment</a></p>
+        <p><a href="https://me.momo.vn/chanfuccute812">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="http://www.facebook.com/meidingcute">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Mei Ding</p>
+        <p><i class="fa fa-fw fa-phone"></i> 08121191102</p>
+        <p><i class="fa fa-fw fa-envelope"></i> dinhheo@gmail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Momo</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
         <br>
-        Web Developer<br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large">
 
-      </h2>
+        </i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
 
-      <p>
-        <strong>"I HAVE EVERYTHING THAT YOU NEED".</strong>
-      </p>
+  <div class="w3-black w3-center w3-padding-24">© Made by Chanfuc (ft W3S)  <a href="https://www.facebook.com/chanfuccute/" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></div>
 
-      <p><strong>Soon to be a professional web developer 🤘<br>
-      </p>
-
-      <dd>
-        <b>
-          <img src="images/yellowsq.gif" alt="*" width="9" height="9" align="center">
-          <a href="https://github.com/Chanfuc812">Github</a><br>
-          <img src="images/yellowsq.gif" alt="*" width="9" height="9" align="center">
-          <a href="https://www.instagram.com/chanfucc/">Instagram</a><br>
-          <img src="images/yellowsq.gif" alt="*" width="9" height="9" align="center">
-          <a href="https://www.youtube.com/channel/UCVFDEECIZYWoer9Svr82lvQ">Youtube</a><br>
-          <img src="https://www.google.com.vn/url?sa=i&url=https%3A%2F%2Fknowyourmeme.com%2Fmemes%2Fcrying-messi&psig=AOvVaw276iUJQcu8W-67MTcZNi2m&ust=1665733859319000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOC7_anc3PoCFQAAAAAdAAAAABAE" alt="*" width="9" height="9" align="center">
-          <a href="https://www.facebook.com/chanfuccute">Facebook
-          </a>
-
-
-        </b>
-
-
-      </dd></td>
-  </tr>
-  </tbody></table>
-
-
-
-
-<hr>
-
-<h2>I learn at UIT-VNUHCM from 2019 to 2024.  </h2>
-
-<hr>
-<h2>Subject learning:</h2>
-<ul>
-  <li>Distributed database</li>
-  <li>Cloud computing</li>
-  <li>Web development</li>
-  <li>Network computing</li>
-
-</ul>
-
-<hr>
-<table border="1">
-  <tr>
-    <th>    EDUCATION   </th>
-    <th>    SKILLS       </th>
-    <th>    EXPERIENCE    </th>
-  </tr>
-  <tr>
-    <td>UIT(2019-2023)</td>
-    <td>Back-end</td>
-    <td>VNG Company (2023-2024)</td>
-  </tr>
-  <tr>
-    <td>CISA</td>
-    <td>Game programmer</td>
-    <td>Intel (2024-2026)</td>
-  </tr>
-  <tr>
-    <td>CISSP</td>
-    <td>Designer & Photoshop</td>
-    <td>Line (2026-2029)</td>
-  </tr>
-  <tr>
-    <td>IELTS 7.5</td>
-    <td>Content Creator</td>
-    <td>Streamer(Now)</td>
-  </tr>
-</table>
-<div>
-  <h5>
-    Anything else you want to ask me ❓
-  </h5>
-  <form>
-    <input type="text"placeholder="          Questions here"/>
-    <button>
-      Submit a question
-    </button>
-  </form>
-
+  <!-- End page content -->
 </div>
-</li>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Accordion
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
 
 
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
 
-
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
 </body>
 </html>
-
-<style>
-  html {
-    background: thistle;
-    border-style: solid;
-    border-width: 25px;
-    border-color: lavender;
-    border-bottom-width: 15px;
-  }
-</style>
